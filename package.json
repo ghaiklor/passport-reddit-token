@@ -1,6 +1,6 @@
 {
   "name": "passport-reddit-token",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Passport strategy for authenticating with Reddit via OAuth2 access tokens",
   "main": "index.js",
   "scripts": {
