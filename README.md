@@ -1,6 +1,13 @@
 # passport-reddit-token
 
-![Build Status](https://img.shields.io/travis/ghaiklor/passport-reddit-token.svg) ![Coverage](https://img.shields.io/coveralls/ghaiklor/passport-reddit-token.svg) ![Downloads](https://img.shields.io/npm/dm/passport-reddit-token.svg) ![npm version](https://img.shields.io/npm/v/passport-reddit-token.svg) ![dependencies](https://img.shields.io/david/ghaiklor/passport-reddit-token.svg) ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/passport-reddit-token.svg) ![License](https://img.shields.io/npm/l/passport-reddit-token.svg)
+![Build Status](https://img.shields.io/travis/ghaiklor/passport-reddit-token.svg)
+![Coverage](https://img.shields.io/coveralls/ghaiklor/passport-reddit-token.svg)
+![Downloads](https://img.shields.io/npm/dm/passport-reddit-token.svg)
+![Downloads](https://img.shields.io/npm/dt/passport-reddit-token.svg)
+![npm version](https://img.shields.io/npm/v/passport-reddit-token.svg)
+![dependencies](https://img.shields.io/david/ghaiklor/passport-reddit-token.svg)
+![dev dependencies](https://img.shields.io/david/dev/ghaiklor/passport-reddit-token.svg)
+![License](https://img.shields.io/npm/l/passport-reddit-token.svg)
 
 [Passport](http://passportjs.org/) strategy for authenticating with Reddit access tokens using the OAuth 2.0 API.
 
@@ -57,7 +64,11 @@ module.exports = {
 };
 ```
 
-The POST request to this route should include a JSON object with the keys `access_token` and optionally, `refresh_token` set to the credentials you receive from Reddit.
+The request to this route should include a GET or POST data with the keys `access_token` and optionally, `refresh_token` set to the credentials you receive from Reddit.
+
+```
+GET /auth/reddit?access_token=<TOKEN>
+```
 
 ## Issues
 
