@@ -28,6 +28,8 @@ The Reddit authentication strategy authenticates users using a Reddit account an
 The strategy requires a `verify` callback, which accepts these credentials and calls `next` providing a user, as well as `options` specifying a app ID and app secret.
 
 ```javascript
+var RedditTokenStrategy = require('passport-reddit-token');
+
 passport.use(new RedditTokenStrategy({
     clientID: REDDIT_CLIENT_ID,
     clientSecret: REDDIT_CLIENT_SECRET,
